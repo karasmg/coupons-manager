@@ -5,10 +5,17 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.7/angular-material.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.js"></script>
     <script type="text/javascript" src="js/coupons.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
-  </head><body ng-controller="CouponsCtrl">
+    <link href="css/style.css" type="text/css">
+  </head><body ng-controller="CouponsCtrl" ng-cloak>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
     <div class="section">
       <div class="container">
         <div class="row">
@@ -18,10 +25,10 @@
                 <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Рекламные кампании&nbsp;<span class="fa fa-caret-down"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li>
-                    <a href="#">Просмотреть</a>
+                    <a href="#" ng-click="set_view('campaign_view')">Просмотреть</a>
                   </li>
                   <li>
-                    <a href="#">Создать</a>
+                    <a href="#" ng-click="set_view('campaign_create')">Создать</a>
                   </li>
                   <li>
                     <a href="#"></a>
@@ -35,16 +42,16 @@
               <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Купоны&nbsp;<span class="fa fa-caret-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="#">Просмотреть</a>
+                  <a href="#" ng-click="set_view('coupons_view')">Просмотреть</a>
                 </li>
                 <li>
-                  <a href="#">Добавить один купон</a>
+                  <a href="#" ng-click="set_view('add_single_coupon')">Добавить один купон</a>
                 </li>
                 <li>
-                  <a href="#">Добавить серию купонов</a>
+                  <a href="#" ng-click="set_view('add_serial_coupons')">Добавить серию купонов</a>
                 </li>
                 <li>
-                  <a href="#">Проверить купон</a>
+                  <a href="#" ng-click="set_view('check_coupon')">Проверить купон</a>
                 </li>
               </ul>
             </div>
@@ -52,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="campaign_create">
+    <div class="section" id="campaign_create" ng-if="views.campaign_create" class="animate-if">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -104,7 +111,7 @@
                   <label class="control-label">Дата начала</label>
                 </div>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" ng-model="new_d_adv_camp.adv_camp_start">
+                  <md-datepicker ng-model="new_d_adv_camp.adv_camp_start" md-placeholder="Enter date"></md-datepicker>
                 </div>
                 <div class="col-sm-offset-2 col-sm-10">
                   <p class="help-block">Оставьте пустое, если дата начала не фиксирована</p>
@@ -142,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="campaign_view">
+    <div class="section" id="campaign_view" ng-if="views.campaign_view" class="animate-if">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
