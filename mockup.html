@@ -1,0 +1,193 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="btn-group">
+              <div class="btn-group btn-group-lg">
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Рекламные кампании&nbsp;<span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#">Просмотреть</a>
+                  </li>
+                  <li>
+                    <a href="#">Создать</a>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="btn-group btn-group-lg">
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Купоны&nbsp;<span class="fa fa-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Просмотреть</a>
+                </li>
+                <li>
+                  <a href="#">Добавить один купон</a>
+                </li>
+                <li>
+                  <a href="#">Добавить серию купонов</a>
+                </li>
+                <li>
+                  <a href="#">Проверить купон</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="campaign_create">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Создать рекламную кампанию</h1>
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Название</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" ng-model="adv_camp_name">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <p class="help-block">Краткое понятное название</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Номер (3 цифры)</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" ng-model="adv_camp_number">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <p class="help-block">3 цифры: например, 001</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Описание&nbsp;</label>
+                </div>
+                <div class="col-sm-10">
+                  <textarea class="form-control" ng-model="adv_camp_desc"></textarea>
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <p class="help-block">Опишите все условия</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Срок (в днях)</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" ng-model="adv_camp_period">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Дата начала</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" ng-model="adv_camp_start">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <p class="help-block">Оставьте пустое, если дата начала не фиксирована</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Макс. кол-во использ.</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" ng-model="adv_camp_maximum_uses">
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <p class="help-block">Цифра, не более 4 знаков</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label class="control-label">Активность</label>
+                </div>
+                <div class="col-sm-10">
+                  <div class="checkbox">
+                    <label class="checkbox-inline">
+                      <input type="checkbox" ng-model="adv_camp_active">Активна</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default" ng-click="campaignCreate()">Создать</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="campaign_view">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Просмотр рекламных кампаний</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Название</th>
+                  <th>Номер</th>
+                  <th>Описание</th>
+                  <th>Период</th>
+                  <th>Старт</th>
+                  <th>Макс кол-во исп.</th>
+                  <th>Активность</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Скидка 5%</td>
+                  <td>001</td>
+                  <td>Купоны на полиграфии</td>
+                  <td>45</td>
+                  <td>15.04.2016</td>
+                  <td>9999</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <ul class="pager">
+          <li>
+            <a href="#">←  Назад</a>
+          </li>
+          <li>
+            <a href="#">Вперед  →</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+
+</body></html>
