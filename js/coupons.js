@@ -1,8 +1,6 @@
 var app = angular.module("Coupons", ['ui.bootstrap']);
 
-app.constant("baseUrl", "BonusCode.php");
-
-app.controller("CouponsCtrl", function ($scope$, http, baseUrl) {
+app.controller("CouponsCtrl", function ($scope, $http) {
 //Механизм смены окон *****************************
     $scope.views = {
         'campaign_view':false,
@@ -118,7 +116,7 @@ app.controller("CouponsCtrl", function ($scope$, http, baseUrl) {
     //picker end **********************************
 
     $scope.campaignCreate = function(){
-        $http.post(baseUrl, $scope.new_d_adv_camp.adv_camp_start).success(function () {
+       $http.post('bonuscode.php', $scope.new_d_adv_camp).success(function () {
             alert('Успешно доставлено');
  //           $scope.items.push(item);
  //           $scope.currentView = "table";
