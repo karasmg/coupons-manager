@@ -1,0 +1,71 @@
+'{"adv_camp_id":"","adv_camp_name":"","adv_camp_number":"","adv_camp_desc":"укаук","adv_camp_period":"","adv_camp_start":"2016-04-26T21:00:00.000Z","adv_camp_maximum_uses":"","adv_camp_active":true,"adv_camp_creation_date":""}'
+stdClass::__set_state(array(
+   'adv_camp_id' => '',
+   'adv_camp_name' => '',
+   'adv_camp_number' => '',
+   'adv_camp_desc' => 'укаук',
+   'adv_camp_period' => '',
+   'adv_camp_start' => '2016-04-26T21:00:00.000Z',
+   'adv_camp_maximum_uses' => '',
+   'adv_camp_active' => true,
+   'adv_camp_creation_date' => '',
+))
+NULL
+stdClass::__set_state(array(
+   'adv_camp_id' => '',
+   'adv_camp_name' => '',
+   'adv_camp_number' => '',
+   'adv_camp_desc' => 'укаук',
+   'adv_camp_period' => '',
+   'adv_camp_start' => '2016-04-26T21:00:00.000Z',
+   'adv_camp_maximum_uses' => '',
+   'adv_camp_active' => true,
+   'adv_camp_creation_date' => '',
+))
+''
+''
+''
+'укаук'
+''
+'2016-04-26T21:00:00.000Z'
+''
+true
+''
+'adv_camp_id'
+'adv_camp_name'
+'adv_camp_number'
+'adv_camp_desc'
+'adv_camp_period'
+'adv_camp_start'
+'adv_camp_maximum_uses'
+'adv_camp_active'
+'adv_camp_creation_date'
+false
+true
+'2016-04-26T21:00:00.000Z'
+'2016-04-19T21:00:00.000Z'
+array (
+)
+array (
+)
+array (
+)
+'null'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
+array (
+)
+'[{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 5%","adv_camp_number":"001","adv_camp_desc":"\\u041a\\u0443\\u043f\\u043e\\u043d\\u044b \\u043d\\u0430 \\u043f\\u043e\\u043b\\u0438\\u0433\\u0440\\u0430\\u0444\\u0438\\u0438","adv_camp_period":"45","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"13.04.2016"},{"adv_camp_id":"1","adv_camp_name":"\\u0421\\u043a\\u0438\\u0434\\u043a\\u0430 15%","adv_camp_number":"002","adv_camp_desc":"\\u041d\\u0430 \\u043f\\u043e\\u0447\\u0442\\u0443","adv_camp_period":"5","adv_camp_start":"15.04.2016","adv_camp_maximum_uses":"9999","adv_camp_active":"1","adv_camp_creation_date":"16.04.2016"}]'
