@@ -173,15 +173,15 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Скидка 5%</td>
-                  <td>001</td>
-                  <td>Купоны на полиграфии</td>
-                  <td>45</td>
-                  <td>15.04.2016</td>
-                  <td>9999</td>
-                  <td>1</td>
+                <tr ng-repeat="item in d_adv_camp">
+                  <td>{{item.adv_camp_id}}</td>
+                  <td>{{item.adv_camp_name}}</td>
+                  <td>{{item.adv_camp_number}}</td>
+                  <td>{{item.adv_camp_desc}}</td>
+                  <td>{{item.adv_camp_period}}</td>
+                  <td>{{item.adv_camp_start}}</td>
+                  <td>{{item.adv_camp_maximum_uses}}</td>
+                  <td>{{item.adv_camp_active}}</td>
                 </tr>
               </tbody>
             </table>

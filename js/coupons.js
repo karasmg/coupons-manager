@@ -1,6 +1,8 @@
 var app = angular.module("Coupons", ['ui.bootstrap']);
 
-app.controller("CouponsCtrl", function ($scope) {
+app.constant("baseUrl", "BonusCode.php");
+
+app.controller("CouponsCtrl", function ($scope$, http, baseUrl) {
 //Механизм смены окон *****************************
     $scope.views = {
         'campaign_view':false,
@@ -20,9 +22,7 @@ app.controller("CouponsCtrl", function ($scope) {
     };
 //Механизм смены окон*****************************
 
-
-
-//Данные
+//Данные форм ************************************
     $scope.new_d_adv_camp = {
         'adv_camp_id':'',
         'adv_camp_name':'',
@@ -34,8 +34,34 @@ app.controller("CouponsCtrl", function ($scope) {
         'adv_camp_active':'',
         'adv_camp_creation_date':''
     };
+    $scope.d_adv_camp = [
+        {
+            'adv_camp_id':'1',
+            'adv_camp_name':'Скидка 5%',
+            'adv_camp_number':'001',
+            'adv_camp_desc':'Купоны на полиграфии',
+            'adv_camp_period':'45',
+            'adv_camp_start': '15.04.2016',
+            'adv_camp_maximum_uses':'9999',
+            'adv_camp_active':'1',
+            'adv_camp_creation_date':'13.04.2016'
+        },
+        {
+            'adv_camp_id':'2',
+            'adv_camp_name':'Скидка 15%',
+            'adv_camp_number':'002',
+            'adv_camp_desc':'На почту',
+            'adv_camp_period':'45',
+            'adv_camp_start': '15.04.2016',
+            'adv_camp_maximum_uses':'9999',
+            'adv_camp_active':'1',
+            'adv_camp_creation_date':'13.04.2016'
+        }
+    ];
 
-    //picker start *******************************************************
+//Данные форм ************************************
+
+//picker start ***********************************
     $scope.today = function() {
         $scope.new_d_adv_camp.adv_camp_start = new Date();
     };
@@ -92,6 +118,12 @@ app.controller("CouponsCtrl", function ($scope) {
     //picker end **********************************
 
     $scope.campaignCreate = function(){
+        $http.post(baseUrl, $scope.new_d_adv_camp.adv_camp_start).success(function () {
+            alert('Успешно доставлено');
+ //           $scope.items.push(item);
+ //           $scope.currentView = "table";
+        });
+
         console.log($scope.new_d_adv_camp.adv_camp_start);
     }
 });
