@@ -1,5 +1,14 @@
 <?php
 
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $post = json_decode(file_get_contents("php://input"));
+   // foreach($post as $key=>$item ) {
+        file_put_contents("debug.txt", var_export($post->adv_camp_start, true) . "\n", FILE_APPEND);
+   // }
+    //echo $data;
+}
+exit(0);
+
 $code = new BonusCode();
 echo $code->generate('GA', '301', '002', '00001');
 
