@@ -98,9 +98,9 @@ app.controller("CouponsCtrl", function ($scope, $http) {
     //picker end **********************************
 
     //Взаимодейтсвие с серверной частью ******************************************
-    $scope.campaignCreate = function(){
+    $scope.campaignCreate = function(is_valid){
 
-            alert(campaign_create.$invalid);
+            alert(is_valid);
 
         $scope.new_d_adv_camp.adv_camp_creation_date = new Date();
        $http.post('bonuscode.php', $scope.new_d_adv_camp).success(function () {

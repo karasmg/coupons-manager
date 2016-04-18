@@ -22,3 +22,7 @@ form .ng-valid.ng-dirty {
 }
 
 
+.error {
+    color: red;
+    font-weight: bold;
+}
