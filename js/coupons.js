@@ -21,6 +21,9 @@ app.controller("CouponsCtrl", function ($scope, $http) {
 //Механизм смены окон*****************************
 
 //Данные форм ************************************
+    $scope.adv_camp_number_pattern = new RegExp("^[0-9]{3}$");
+    $scope.adv_camp_period_pattern = new RegExp("^[0-9]{1,2}$");
+
     $scope.new_d_adv_camp = {
         'adv_camp_id':'',
         'adv_camp_name':'',
@@ -32,34 +35,10 @@ app.controller("CouponsCtrl", function ($scope, $http) {
         'adv_camp_active':'',
         'adv_camp_creation_date':''
     };
-    $scope.d_adv_camp = []
-        /*
 
-        [
-        {
-            'adv_camp_id':'1',
-            'adv_camp_name':'Скидка 5%',
-            'adv_camp_number':'001',
-            'adv_camp_desc':'Купоны на полиграфии',
-            'adv_camp_period':'45',
-            'adv_camp_start': '15.04.2016',
-            'adv_camp_maximum_uses':'9999',
-            'adv_camp_active':'1',
-            'adv_camp_creation_date':'13.04.2016'
-        },
-        {
-            'adv_camp_id':'2',
-            'adv_camp_name':'Скидка 15%',
-            'adv_camp_number':'002',
-            'adv_camp_desc':'На почту',
-            'adv_camp_period':'45',
-            'adv_camp_start': '15.04.2016',
-            'adv_camp_maximum_uses':'9999',
-            'adv_camp_active':'1',
-            'adv_camp_creation_date':'13.04.2016'
-        }
-    ];
-*/
+
+    $scope.d_adv_camp = []
+
 //Данные форм ************************************
 
 //picker start ***********************************
@@ -120,6 +99,10 @@ app.controller("CouponsCtrl", function ($scope, $http) {
 
     //Взаимодейтсвие с серверной частью ******************************************
     $scope.campaignCreate = function(){
+
+            alert(campaign_create.$invalid);
+
+        $scope.new_d_adv_camp.adv_camp_creation_date = new Date();
        $http.post('bonuscode.php', $scope.new_d_adv_camp).success(function () {
             alert('Успешно передано');
         });

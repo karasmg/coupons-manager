@@ -8,3 +8,17 @@
     border-radius: 32px;
     color: black;
 }
+
+
+/* Данное правило распространяется на все элементы с которыми взаимодействовал прользователь и которые не прошли проверку */
+form .ng-invalid.ng-dirty {
+    background-color: lightpink;
+}
+
+/* Правило для всех элементов, которые прошли проверку после взаимодействия с пользователем */
+form .ng-valid.ng-dirty {
+    background-color: lightgreen;
+    color: green;
+}
+
+
