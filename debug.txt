@@ -1,0 +1,45 @@
+'{"adv_camp_id":"","adv_camp_name":"","adv_camp_number":"","adv_camp_desc":"укаук","adv_camp_period":"","adv_camp_start":"2016-04-26T21:00:00.000Z","adv_camp_maximum_uses":"","adv_camp_active":true,"adv_camp_creation_date":""}'
+stdClass::__set_state(array(
+   'adv_camp_id' => '',
+   'adv_camp_name' => '',
+   'adv_camp_number' => '',
+   'adv_camp_desc' => 'укаук',
+   'adv_camp_period' => '',
+   'adv_camp_start' => '2016-04-26T21:00:00.000Z',
+   'adv_camp_maximum_uses' => '',
+   'adv_camp_active' => true,
+   'adv_camp_creation_date' => '',
+))
+NULL
+stdClass::__set_state(array(
+   'adv_camp_id' => '',
+   'adv_camp_name' => '',
+   'adv_camp_number' => '',
+   'adv_camp_desc' => 'укаук',
+   'adv_camp_period' => '',
+   'adv_camp_start' => '2016-04-26T21:00:00.000Z',
+   'adv_camp_maximum_uses' => '',
+   'adv_camp_active' => true,
+   'adv_camp_creation_date' => '',
+))
+''
+''
+''
+'укаук'
+''
+'2016-04-26T21:00:00.000Z'
+''
+true
+''
+'adv_camp_id'
+'adv_camp_name'
+'adv_camp_number'
+'adv_camp_desc'
+'adv_camp_period'
+'adv_camp_start'
+'adv_camp_maximum_uses'
+'adv_camp_active'
+'adv_camp_creation_date'
+false
+true
+'2016-04-26T21:00:00.000Z'
