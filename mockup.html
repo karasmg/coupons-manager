@@ -60,7 +60,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1>Создать рекламную кампанию</h1>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" name="campaign_create">
               <div class="form-group">
                 <div class="col-sm-2">
                   <label class="control-label">Название</label>
@@ -192,7 +192,7 @@
             <a href="#">←  Назад</a>
           </li>
           <li>
-            <a href="#">Вперед  →</a>
+            <a href="#" ng-click="getCampaigns()">Вперед  →</a>
           </li>
         </ul>
       </div>

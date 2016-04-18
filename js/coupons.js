@@ -32,7 +32,10 @@ app.controller("CouponsCtrl", function ($scope, $http) {
         'adv_camp_active':'',
         'adv_camp_creation_date':''
     };
-    $scope.d_adv_camp = [
+    $scope.d_adv_camp = []
+        /*
+
+        [
         {
             'adv_camp_id':'1',
             'adv_camp_name':'Скидка 5%',
@@ -56,7 +59,7 @@ app.controller("CouponsCtrl", function ($scope, $http) {
             'adv_camp_creation_date':'13.04.2016'
         }
     ];
-
+*/
 //Данные форм ************************************
 
 //picker start ***********************************
@@ -115,14 +118,19 @@ app.controller("CouponsCtrl", function ($scope, $http) {
 
     //picker end **********************************
 
+    //Взаимодейтсвие с серверной частью ******************************************
     $scope.campaignCreate = function(){
        $http.post('bonuscode.php', $scope.new_d_adv_camp).success(function () {
-            alert('Успешно доставлено');
- //           $scope.items.push(item);
- //           $scope.currentView = "table";
+            alert('Успешно передано');
         });
 
-        console.log($scope.new_d_adv_camp.adv_camp_start);
-    }
+
+    };
+    $scope.getCampaigns = function(){
+        $http.get("bonuscode.php").success(function (response) {
+            // при успешной обработке запроса передаем данные в scope
+            $scope.d_adv_camp = response;
+        });
+    };//Взаимодейтсвие с серверной частью ******************************************
 });
 
