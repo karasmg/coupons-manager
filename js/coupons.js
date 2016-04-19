@@ -23,6 +23,7 @@ app.controller("CouponsCtrl", function ($scope, $http) {
 //Данные форм ************************************
     $scope.adv_camp_number_pattern = new RegExp("^[0-9]{3}$");
     $scope.adv_camp_period_pattern = new RegExp("^[0-9]{1,2}$");
+    $scope.adv_camp_maximum_uses_pattern = new RegExp("^[0-9]{1-4}$");
 
     $scope.new_d_adv_camp = {
         'adv_camp_id':'',
