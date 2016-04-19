@@ -19,6 +19,9 @@ $camp1->adv_camp_maximum_uses = '9999';
 $camp1->adv_camp_active = '1';
 $camp1->adv_camp_creation_date = '13.04.2016';
 
+
+
+
 $camp2 = new d_adv_camp();
 $camp2->adv_camp_id = '1';
 $camp2->adv_camp_name = 'Скидка 15%';
